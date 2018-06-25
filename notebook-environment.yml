@@ -1,0 +1,10 @@
+name: notebook
+dependencies:
+  - python = 3.6
+  - numpy
+  - scipy
+  - matplotlib
+  - sympy
+  - pandas
+  - seaborn
+  - jupyter

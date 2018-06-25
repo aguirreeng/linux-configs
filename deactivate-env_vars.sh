@@ -8,5 +8,3 @@ then
 else
   unset PYTHONPATH
 fi
-
-unset CPLUS_INCLUDE_PATH
