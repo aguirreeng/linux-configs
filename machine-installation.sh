@@ -8,11 +8,11 @@ $HOME/apps/anaconda3/bin/conda config --add channels conda-forge --yes
 $HOME/apps/anaconda3/bin/conda update --prefix $HOME/apps/anaconda3 anaconda --yes
 
 # Create conda environment
-$HOME/apps/anaconda3/bin/conda env create --file=$HOME/repository/linux-configs/notebook-environment.yml
+$HOME/apps/anaconda3/bin/conda env create --file=$HOME/repository/linux-configs/conda-envs/notebook-environment.yml
 mkdir -p $HOME/apps/anaconda3/envs/notebook/etc/conda/activate.d
 mkdir -p $HOME/apps/anaconda3/envs/notebook/etc/conda/deactivate.d
-cp $HOME/repository/linux-configs/activate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/activate.d/env_vars.sh
-cp $HOME/repository/linux-configs/deactivate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/deactivate.d/env_vars.sh
+cp $HOME/repository/linux-configs/conda-envs/activate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/activate.d/env_vars.sh
+cp $HOME/repository/linux-configs/conda-envs/deactivate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/deactivate.d/env_vars.sh
 
 # Install Cling
 #wget --directory-prefix=$HOME/Downloads https://root.cern.ch/download/cling/cling_2017-10-11_ubuntu16.tar.bz2
