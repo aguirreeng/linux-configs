@@ -4,7 +4,7 @@ echo -ne '\n' | bash $HOME/Downloads/Anaconda3-5.2.0-Linux-x86_64.sh -b -p $HOME
 cp $HOME/.bashrc $HOME/.bashrc_backup
 echo "# Anaconda3 path" >> $HOME/.bashrc
 echo "export PATH=\$HOME/apps/anaconda3/bin:\$PATH" >> $HOME/.bashrc
-$HOME/apps/anaconda3/bin/conda config --add channels conda-forge --yes
+$HOME/apps/anaconda3/bin/conda config --add channels conda-forge
 $HOME/apps/anaconda3/bin/conda update --prefix $HOME/apps/anaconda3 anaconda --yes
 
 # Create conda environment
@@ -26,3 +26,29 @@ cp $HOME/repository/linux-configs/conda-envs/deactivate-env_vars.sh $HOME/apps/a
 #$HOME/apps/anaconda3/envs/notebook/bin/jupyter-kernelspec install --user $HOME/apps/cling_2017-10-11_ubuntu16/share/cling/Jupyter/kernel/cling-cpp14
 #$HOME/apps/anaconda3/envs/notebook/bin/jupyter-kernelspec install --user $HOME/apps/cling_2017-10-11_ubuntu16/share/cling/Jupyter/kernel/cling-cpp17
 #source $HOME/apps/anaconda3/envs/notebook/bin/deactivate
+
+# Install Visual Studio Code C++ extensions
+code --install-extension ms-vscode.cpptools
+code --install-extension bbenoist.Doxygen
+code --install-extension matthewferreira.cppcheck
+code --install-extension twxs.cmake
+code --install-extension vector-of-bool.cmake-tools
+code --install-extension kriegalex.vscode-cudacpp
+
+# Install Visual Studio Code Markdown extensions
+code --install-extension bierner.emojisense
+code --install-extension bierner.markdown-checkbox
+code --install-extension bierner.markdown-emoji
+code --install-extension bierner.markdown-footnotes
+code --install-extension bierner.markdown-mermaid
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension geeklearningio.graphviz-markdown-preview
+code --install-extension goessner.mdmath
+code --install-extension swiftstudios.insert-special-symbol
+
+# Install Visual Studio Code Python extensions
+code --install-extension ms-python.python
+
+#  Install Visual Studio Code LaTeX extensions
+code --install-extension James-Yu.latex-workshop
+
