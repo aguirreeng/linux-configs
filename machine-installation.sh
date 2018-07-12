@@ -14,6 +14,9 @@ mkdir -p $HOME/apps/anaconda3/envs/notebook/etc/conda/deactivate.d
 cp $HOME/repository/linux-configs/conda-envs/activate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/activate.d/env_vars.sh
 cp $HOME/repository/linux-configs/conda-envs/deactivate-env_vars.sh $HOME/apps/anaconda3/envs/notebook/etc/conda/deactivate.d/env_vars.sh
 
+# Install Thonny
+bash <(curl -s http://thonny.org/installer-for-linux)
+
 # Install Cling
 #wget --directory-prefix=$HOME/Downloads https://root.cern.ch/download/cling/cling_2017-10-11_ubuntu16.tar.bz2
 #tar --extract --bzip2 --verbose --file=$HOME/Downloads/cling_2017-10-11_ubuntu16.tar.bz2 --directory=$HOME/apps
