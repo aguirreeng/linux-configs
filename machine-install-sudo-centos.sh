@@ -1,3 +1,6 @@
+# Include EPEL repository for additional software
+yum --assumeyes install epel-release
+
 # Develpment Libraries and Tools
 yum --assumeyes group install "Development Tools"
 
